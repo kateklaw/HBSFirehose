@@ -1,0 +1,21 @@
+<div class="span8 boxy text-center offset3">
+	<h1 class="h1-custom">
+			Ruby on Rails
+		</h1>
+		<br />
+
+	<h2>
+
+	<%= simple_form_for @pic do |f|%>
+		<%= f.input :lesson %>
+		<%= f.input :emotion %>
+		<%= f.input :learn %>
+		
+		<br />
+
+		<%= submit_tag 'Save', :class => 'btn btn-info btn-large' %>
+
+	<% end %>
+
+	</h2>
+</div>
