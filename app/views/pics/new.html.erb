@@ -1,21 +1,19 @@
 <div class="span8 boxy text-center offset3">
 	<h1 class="h1-custom">
-			Ruby on Rails
+			Upload another lesson
 		</h1>
 		<br />
 
-	<h2>
 
 	<%= simple_form_for @pic do |f|%>
-		<%= f.input :lesson %>
-		<%= f.input :emotion %>
-		<%= f.input :learn %>
+		<%= f.input :lesson, :label => 'Your latest lesson', :placeholder => '1,2, etc.' %>
+		<%= f.input :emotion, :label => 'How did you feel?', :placeholder => 'Stoked, Happy or Jazzed' %>
+		<%= f.input :learn, :label => 'What did you learn?', :placeholder => 'HTML5, CSS, Rails, Github, etc.' %>
 		
 		<br />
-
+		<br />
 		<%= submit_tag 'Save', :class => 'btn btn-info btn-large' %>
 
 	<% end %>
 
-	</h2>
 </div>
